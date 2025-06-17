@@ -7,11 +7,45 @@
     .sub-title{
       padding-bottom: 15px;
     }
-    p{
-      padding: 15px 0;
+    .profile-image{
+      bottom: 10px;
+      left: 190px;
+      .img{
+        width: 60px;
+        height: 60px;
+        border: 3px solid var(--bs-primary-color);
+        margin-left: -16px;
+        &:first-child{
+          margin-left: 0;
+        }
+        img{
+          height: 100%;
+          object-fit: cover;
+        }
+      }
     }
-    .banner-button{
-
+  }
+  .banner-image{
+    width: 966px;
+    right: -84px;
+    .img{
+      clip-path: polygon(calc(0% - 180px) 0, 100% 0, 100% 100%, calc(0% - 180px) 100%, 0 50%);
+      z-index: 9;
+    }
+    .img-shapes{
+      .shape-1{
+        top: 0;
+        left: 60px;
+      }
+      .shape-2{
+        bottom: 0;
+        left: -75px;
+      }
+      .shape-3{
+        top: 167px;
+        left: 0;
+        z-index: 99;
+      }
     }
   }
 }
